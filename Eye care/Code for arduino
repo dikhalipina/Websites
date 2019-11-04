@@ -42,27 +42,20 @@ void loop() {
   if (isnan(dht.humidity) || isnan(dht.temperature_C)) {
     return;
   }
-digitalWrite(LED_RED, HIGH);
+digitalWrite(LED_RED, LOW);
    digitalWrite(L1, HIGH);
     digitalWrite(L2, HIGH);
     digitalWrite(L3, HIGH);
     digitalWrite(L4, HIGH);
     digitalWrite(L5, HIGH);
     
-     Serial.print("Luminoscity:"); Serial.print(raw); Serial.print(" "); Serial.print("Temperature,C°:"); Serial.print(dht.temperature_C); Serial.print(" "); Serial.print("Humidity,%:"); Serial.println(dht.humidity);
+     Serial.print("Luminoscity:"); Serial.print(raw); Serial.print(" "); Serial.print("Temperature,C:"); Serial.print(dht.temperature_C); Serial.print(" "); Serial.print("Humidity,%:"); Serial.println(dht.humidity);
     delay(500);
     
-    if ((raw <= 500) || (dht.humidity <= 80.00)){
-    digitalWrite(LED_RED, LOW);
+     if ((raw <= 500)){
+    digitalWrite(LED_RED, HIGH);
   }
-  if ((raw <= 500) || (dht.humidity >= 80.00)){
-    digitalWrite(LED_RED, LOW);
-  }
-  if ((raw >= 500) || (dht.humidity <= 80.00)){
-    digitalWrite(LED_RED, LOW);
-  }
-  
- if ((raw >= 500) || (dht.humidity >= 80.00)){
+  if ( (dht.humidity <= 80.00)){
     digitalWrite(LED_RED, HIGH);
   }
   
@@ -76,19 +69,12 @@ digitalWrite(LED_RED, HIGH);
     digitalWrite(L4, HIGH);
     digitalWrite(L5, HIGH);
 
-    Serial.print("Luminoscity:"); Serial.print(raw); Serial.print(" "); Serial.print("Temperature,C°:"); Serial.print(dht.temperature_C); Serial.print(" "); Serial.print("Humidity,%:"); Serial.println(dht.humidity);
+    Serial.print("Luminoscity:"); Serial.print(raw); Serial.print(" "); Serial.print("Temperature,C:"); Serial.print(dht.temperature_C); Serial.print(" "); Serial.print("Humidity,%:"); Serial.println(dht.humidity);
     
-      if ((raw <= 500) || (dht.humidity <= 80.00)){
-    digitalWrite(LED_RED, LOW);
+    if ((raw <= 500)){
+    digitalWrite(LED_RED, HIGH);
   }
-  if ((raw <= 500) || (dht.humidity >= 80.00)){
-    digitalWrite(LED_RED, LOW);
-  }
-  if ((raw >= 500) || (dht.humidity <= 80.00)){
-    digitalWrite(LED_RED, LOW);
-  }
-  
- if ((raw >= 500) || (dht.humidity >= 80.00)){
+  if ( (dht.humidity <= 80.00)){
     digitalWrite(LED_RED, HIGH);
   }
   delay(500);
@@ -97,18 +83,11 @@ digitalWrite(LED_RED, HIGH);
   for( uint32_t tStart = millis();  (millis()-tStart) < period5;  ){
   timing = millis(); 
   
-   Serial.print("Luminoscity:"); Serial.print(raw); Serial.print(" "); Serial.print("Temperature,C°:"); Serial.print(dht.temperature_C); Serial.print(" "); Serial.print("Humidity,%:"); Serial.println(dht.humidity);
-        if ((raw <= 500) || (dht.humidity <= 80.00)){
-    digitalWrite(LED_RED, LOW);
+   Serial.print("Luminoscity:"); Serial.print(raw); Serial.print(" "); Serial.print("Temperature,C:"); Serial.print(dht.temperature_C); Serial.print(" "); Serial.print("Humidity,%:"); Serial.println(dht.humidity);
+   if ((raw <= 500)){
+    digitalWrite(LED_RED, HIGH);
   }
-   if ((raw <= 500) || (dht.humidity >= 80.00)){
-    digitalWrite(LED_RED, LOW);
-  }
-  if ((raw >= 500) || (dht.humidity <= 80.00)){
-    digitalWrite(LED_RED, LOW);
-  }
-  
- if ((raw >= 500) || (dht.humidity >= 80.00)){
+  if ( (dht.humidity <= 80.00)){
     digitalWrite(LED_RED, HIGH);
   }
   
@@ -139,19 +118,12 @@ digitalWrite(LED_RED, HIGH);
     digitalWrite(L4, HIGH);
     digitalWrite(L5, HIGH);
 
-    Serial.print("Luminoscity:"); Serial.print(raw); Serial.print(" "); Serial.print("Temperature,C°:"); Serial.print(dht.temperature_C); Serial.print(" "); Serial.print("Humidity,%:"); Serial.println(dht.humidity);
+    Serial.print("Luminoscity:"); Serial.print(raw); Serial.print(" "); Serial.print("Temperature,C:"); Serial.print(dht.temperature_C); Serial.print(" "); Serial.print("Humidity,%:"); Serial.println(dht.humidity);
     
-      if ((raw <= 500) || (dht.humidity <= 80.00)){
-    digitalWrite(LED_RED, LOW);
+    if ((raw <= 500)){
+    digitalWrite(LED_RED, HIGH);
   }
-  if ((raw <= 500) || (dht.humidity >= 80.00)){
-    digitalWrite(LED_RED, LOW);
-  }
-  if ((raw >= 500) || (dht.humidity <= 80.00)){
-    digitalWrite(LED_RED, LOW);
-  }
-  
- if ((raw >= 500) || (dht.humidity >= 80.00)){
+  if ( (dht.humidity <= 80.00)){
     digitalWrite(LED_RED, HIGH);
   }
   delay(500);
@@ -160,19 +132,12 @@ digitalWrite(LED_RED, HIGH);
  for( uint32_t tStart = millis();  (millis()-tStart) < period5;  ){
   timing = millis(); 
   
-   Serial.print("Luminoscity:"); Serial.print(raw); Serial.print(" "); Serial.print("Temperature,C°:"); Serial.print(dht.temperature_C); Serial.print(" "); Serial.print("Humidity,%:"); Serial.println(dht.humidity);
+   Serial.print("Luminoscity:"); Serial.print(raw); Serial.print(" "); Serial.print("Temperature,C:"); Serial.print(dht.temperature_C); Serial.print(" "); Serial.print("Humidity,%:"); Serial.println(dht.humidity);
 
-      if ((raw <= 500) || (dht.humidity <= 80.00)){
-    digitalWrite(LED_RED, LOW);
+      if ((raw <= 500)){
+    digitalWrite(LED_RED, HIGH);
   }
-  if ((raw <= 500) || (dht.humidity >= 80.00)){
-    digitalWrite(LED_RED, LOW);
-  }
-  if ((raw >= 500) || (dht.humidity <= 80.00)){
-    digitalWrite(LED_RED, LOW);
-  }
-  
- if ((raw >= 500) || (dht.humidity >= 80.00)){
+  if ( (dht.humidity <= 80.00)){
     digitalWrite(LED_RED, HIGH);
   }
   
@@ -203,19 +168,12 @@ digitalWrite(LED_RED, HIGH);
     digitalWrite(L4, HIGH);
     digitalWrite(L5, HIGH);
 
-    Serial.print("Luminoscity:"); Serial.print(raw); Serial.print(" "); Serial.print("Temperature,C°:"); Serial.print(dht.temperature_C); Serial.print(" "); Serial.print("Humidity,%:"); Serial.println(dht.humidity);
+    Serial.print("Luminoscity:"); Serial.print(raw); Serial.print(" "); Serial.print("Temperature,C:"); Serial.print(dht.temperature_C); Serial.print(" "); Serial.print("Humidity,%:"); Serial.println(dht.humidity);
     
-      if ((raw <= 500) || (dht.humidity <= 80.00)){
-    digitalWrite(LED_RED, LOW);
+     if ((raw <= 500)){
+    digitalWrite(LED_RED, HIGH);
   }
-  if ((raw <= 500) || (dht.humidity >= 80.00)){
-    digitalWrite(LED_RED, LOW);
-  }
-  if ((raw >= 500) || (dht.humidity <= 80.00)){
-    digitalWrite(LED_RED, LOW);
-  }
-  
- if ((raw >= 500) || (dht.humidity >= 80.00)){
+  if ( (dht.humidity <= 80.00)){
     digitalWrite(LED_RED, HIGH);
   }
   delay(500);
@@ -224,19 +182,12 @@ digitalWrite(LED_RED, HIGH);
  for( uint32_t tStart = millis();  (millis()-tStart) < period5;  ){
   timing = millis(); 
   
-   Serial.print("Luminoscity:"); Serial.print(raw); Serial.print(" "); Serial.print("Temperature,C°:"); Serial.print(dht.temperature_C); Serial.print(" "); Serial.print("Humidity,%:"); Serial.println(dht.humidity);
+   Serial.print("Luminoscity:"); Serial.print(raw); Serial.print(" "); Serial.print("Temperature,C:"); Serial.print(dht.temperature_C); Serial.print(" "); Serial.print("Humidity,%:"); Serial.println(dht.humidity);
 
-      if ((raw <= 500) || (dht.humidity <= 80.00)){
-    digitalWrite(LED_RED, LOW);
+    if ((raw <= 500)){
+    digitalWrite(LED_RED, HIGH);
   }
-  if ((raw <= 500) || (dht.humidity >= 80.00)){
-    digitalWrite(LED_RED, LOW);
-  }
-  if ((raw >= 500) || (dht.humidity <= 80.00)){
-    digitalWrite(LED_RED, LOW);
-  }
-  
- if ((raw >= 500) || (dht.humidity >= 80.00)){
+  if ( (dht.humidity <= 80.00)){
     digitalWrite(LED_RED, HIGH);
   }
   
